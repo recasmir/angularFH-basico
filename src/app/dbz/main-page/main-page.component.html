@@ -3,13 +3,12 @@
 
 <div class="row">
     <div class="col">
-        <!-- <app-personajes></app-personajes> -->
-        <app-personajes [personajes]="personajes"></app-personajes>
+        <app-personajes></app-personajes>
+        <!-- <app-personajes [personajes]="personajes"></app-personajes> -->
     </div>
     <div class="col">
         <app-agregar 
         [nuevo]="nuevo"
-        (onNuevoPersonaje)="agregarNuevoPersonaje($event)"
          ></app-agregar>
 
          <!-- (onNuevoPersonaje)="agregarNuevoPersonaje($event)" Este evento ya no existe cuando estamos refactorizando con el servicio-->
